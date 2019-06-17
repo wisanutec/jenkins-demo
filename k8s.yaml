@@ -1,18 +1,20 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: jenkins-demo
   namespace: default
 spec:
+  selector:
+    matchLabels:
+      app: jenkins-demo
   template:
     metadata:
       labels:
         app: jenkins-demo
     spec:
       containers:
-      - image: cnych/jenkins-demo:<BUILD_TAG>
+      - image: swr.ap-southeast-2.myhuaweicloud.com/jenkins/jenkins-demo:<BUILD_TAG>
         imagePullPolicy: IfNotPresent
         name: jenkins-demo
         env:
         - name: branch
-          value: <BRANCH_NAME>
