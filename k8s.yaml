@@ -22,3 +22,5 @@ spec:
         name: jenkins-demo
         env:
         - name: branch
+      imagePullSecrets:
+        - name: default-secret
