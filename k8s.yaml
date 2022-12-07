@@ -14,8 +14,8 @@ spec:
         app: jenkins-demo
     spec:
       containers:
-      #- image: swr.ap-southeast-2.myhuaweicloud.com/batch/jenkins-demo:<BUILD_TAG>
-      - image: swr.ap-southeast-2.myhuaweicloud.com/batch/jenkins-demo:latest
+      - image: swr.ap-southeast-2.myhuaweicloud.com/batch/jenkins-demo:<BUILD_TAG>
+      #- image: swr.ap-southeast-2.myhuaweicloud.com/batch/jenkins-demo:latest
         imagePullPolicy: IfNotPresent
         command:
           - sleep
