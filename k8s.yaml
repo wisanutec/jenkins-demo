@@ -2,7 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: jenkins-demo
-  namespace: default
+  #namespace: default
+  namespace: devops-tools 
 spec:
   selector:
     matchLabels:
