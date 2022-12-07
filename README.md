@@ -1,3 +1,2 @@
 # jenkins-demo
-some demo project for jenkins
-Wisanu
+Demo project for jenkins CICD with Huawei Cloud CCE
